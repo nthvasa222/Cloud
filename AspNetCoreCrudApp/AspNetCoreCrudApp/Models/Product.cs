@@ -15,7 +15,7 @@ namespace AspNetCoreCrudApp.Models
         public string Description { get; set; } = string.Empty;
 
         [Required]
-        [Range(0.01, double.MaxValue, ErrorMessage = "Price must be greater than zero")]
+        [Range(0.01, double.MaxValue, ErrorMessage = "Price must be zero or greater")]
         public decimal Price { get; set; }
 
         [Required]
